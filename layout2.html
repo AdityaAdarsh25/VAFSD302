@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+             margin:0px;
+             padding:0px;
+             box-sizing:border-box;
+         }
+        main{
+             width:1200px;
+             height:800px;
+             background-color:rgb(red, green, blue);
+             margin:0 auto;
+             display:grid;
+             grid-template-columns: 1fr;
+             grid-template-rows:120px 700px 80px;
+             background-color:rgb(255, 255, 255);
+         }
+         #logo,section,footer
+         {
+           background-color: rgb(157, 255, 127); 
+           margin:5px;
+         }
+         #logo
+         {
+            margin-top:0;
+         }
+         section
+         {
+            display:grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 690px;
+            gap:10px;
+         }
+         #left
+         {
+            background-color:aqua;
+            text-align: center;
+            align-content:center;
+         }
+         #right
+         {
+            background-color: blanchedalmond;
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr;
+         }
+         header,article{
+            background-color: blueviolet;text-align: center;align-content: center;
+         }
+         footer{
+            background-color: rgb(255, 240, 251);
+            margin:5px;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo"><h2>Logo</h2></div>
+        <section>
+            <div id="left"><h2>Side Bar Navigation</h2></div>
+            <div id="right">
+                <header><h2>header</h2></header>
+                <article><h2>article</h2></article>
+            </div>
+        </section>
+        <footer id="center"><h2>footer</h2></footer>
+    </main>
+</body>
+</html>

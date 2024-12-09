@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection | CSS</title>
+    <style>
+        /*body{margin:0px;padding:0px;box-sizing:border-box;}
+        div{background-color:purple;}
+        p{background-color: antiquewhite;}
+        .para{color:cyan;}
+        #txt{font-size: larger;}*/
+        div~p{color:blue;}
+        a:hover{color:red;}
+        a:visited{color:aquamarine;}
+        p::first-letter{color:blueviolet;font-size:larger}
+        p::after{content:'Add more';color:blue; opacity:0.5;}
+    </style>
+</head>
+<body>
+    <div>
+        <a href="">click here to see result!</a>
+        <a href="">click</a>
+        <h2>Direct Child</h2>
+        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Impedit est necessitatibus similique dolore magni quos nisi, sequi vel veniam at 
+        accusantium laudantium quasi nostrum quia ab beatae nulla tempora illum?</p>
+    <p id="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Impedit est necessitatibus similique dolore magni quos nisi, sequi vel veniam at 
+        accusantium laudantium quasi nostrum quia ab beatae nulla tempora illum?</p>
+    <main>
+    <h2>Indirect Child</h2>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Impedit est necessitatibus similique dolore magni quos nisi, sequi vel veniam at 
+        accusantium laudantium quasi nostrum quia ab beatae nulla tempora illum?</p>
+    </main>
+    </div>
+</body>
+</html>
